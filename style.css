@@ -1,0 +1,140 @@
+body {
+    background-color: #344e41;
+    color: #dad7cd;
+    padding: 10px 15px;
+}
+.profile .nav ul  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600px;
+}
+.profile .nav ul li:hover{
+    color: #a3b18a;
+    cursor: pointer;
+}
+.profile .content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.profile .content .right img{
+    margin-top: 30px;
+    width: 500px;
+    height: 100%;
+    border-radius: 20px;
+}
+.profile .content .left {
+    margin: 30px;
+}
+.profile .content .left .name {
+    color: #dad7cd;
+    font-size: 80px;
+    font-weight: 500;
+}
+.profile .content .left .dev {
+    color: #dad7cd;
+    font-size: 40px;
+    font-weight: 100;
+}
+.profile .btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile .btn button {
+    padding: 8px 4px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #606c38;
+    color: #3a5a40;
+    font-size: 14px;
+}
+.profile .btn button:hover{
+    background-color: #606c38;
+    color: white;
+    cursor: pointer;
+}
+
+
+.hamburger-icon {
+    z-index: 9999;
+    cursor: pointer;
+    font-size: 24px;
+    color: #dad7cd; 
+    padding: 10px; 
+}
+@media (max-width: 768px) {
+    .profile .nav ul {
+        display: none;
+        
+    }
+    .profile .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile .content .left .dev {
+        margin-top: 20px;
+        text-align: center;
+        color: #dad7cd;
+        font-size: 30px;
+        font-weight: 100;
+    }
+    .profile .content .right img{
+        margin-top: 30px;
+        width:350px;
+        height: 100%;
+        
+    }
+
+    /* menu resp*/
+.hamburger-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333; 
+    padding: 10px; 
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1; 
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #dad7cd; 
+    color: #3a5a40;
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px;
+    height: 100%;
+    overflow-y: auto; 
+    transition: left 0.3s ease; 
+}
+.nav ul.show-menu {
+    left: 0; 
+}
+.nav ul li {
+    padding: 20px;
+    text-align: center;
+}
+.nav ul li a {
+    color: #3a5a40;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+.nav ul li a:hover {
+    background-color: #555;
+}
+    .nav ul.show-menu {
+        display: block;
+    }
+}
